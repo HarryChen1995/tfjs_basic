@@ -12,6 +12,7 @@ Y.forEach((d)=> {Y_noise.push(d+Math.random())})
 
 X = tf.tensor(X)
 Y = tf.tensor(Y)
+
 const A = tf.scalar(Math.random()).variable();
 const B = tf.scalar(Math.random()).variable();
 
@@ -36,8 +37,6 @@ preds.forEach((pred, i) => {
 
 
 console.log(s)
-
-
 
 
 
