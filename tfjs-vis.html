@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src = "tf.js"></script>
+        <script src="tfjs-vis.js"></script>
+    </head>
+    <body>
+        <script>
+            Data1 = []
+            for (var i = 0 ; i < 1000; i++){
+                Data1.push({x:i, y:i*2})
+            }
+            Data2 = []
+            for (var i = 0 ; i < 1000; i++){
+                Data2.push({x:i, y:i*3})
+            }
+          const data = { values: [Data1, Data2], series:['1', '2']}
+
+// Render to visor
+const surface = { name: 'Zoomed Line Chart', tab: 'Charts'};
+tfvis.render.linechart(surface, data);
+        </script>
+    </body>
+</html>

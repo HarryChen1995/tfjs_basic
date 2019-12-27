@@ -1,4 +1,4 @@
-const tf = require("@tensorflow/tfjs")
+import * as tf from '@tensorflow/tfjs-node';
 var X = []
 
 for (var i=0 ; i< 50; i++){
