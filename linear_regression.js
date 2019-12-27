@@ -1,4 +1,4 @@
-const tf = require("@tensorflow/tfjs")
+const tf = require("@tensorflow/tfjs-node")
 var X = []
 
 for (var i=0 ; i< 50; i++){
@@ -27,7 +27,7 @@ const optimizer = tf.train.sgd(0.001)
 train = function(){
   optimizer.minimize(()=>loss(pred(X), Y_noise))
 }
-for (var i = 0; i < 30000; i++){
+for (var i = 0; i < 5000; i++){
 
     tf.tidy(train)
    

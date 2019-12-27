@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/HarryChen1995/tfjs_basic#readme",
   "dependencies": {
-    "@tensorflow/tfjs": "^1.5.1"
+    "@tensorflow/tfjs": "^1.5.1",
+    "@tensorflow/tfjs-node": "^1.5.1"
   }
 }
