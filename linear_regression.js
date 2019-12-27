@@ -27,7 +27,7 @@ const optimizer = tf.train.sgd(0.001)
 train = function(){
   optimizer.minimize(()=>loss(pred(X), Y_noise))
 }
-for (var i = 0; i < 20000; i++){
+for (var i = 0; i < 30000; i++){
 
     tf.tidy(train)
    
