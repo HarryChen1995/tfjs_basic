@@ -11,14 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/HarryChen1995/tfjs_basic.git"
   },
-  "author": "",
+  "author": "Hanlin Chen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/HarryChen1995/tfjs_basic/issues"
   },
   "homepage": "https://github.com/HarryChen1995/tfjs_basic#readme",
   "dependencies": {
-    "@tensorflow/tfjs-node": "^1.5.1",
-    "express": "^4.17.1"
+    "@tensorflow/tfjs": "^1.5.1"
   }
 }
