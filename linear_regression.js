@@ -15,7 +15,8 @@ Y = tf.tensor(Y, [1, 50], "float32")
 
 const A = tf.variable(tf.randomNormal([1]))
 const B = tf.variable(tf.randomNormal([1]));
-
+A_orignal = A.dataSync()
+B_orignal = B.dataSync()
 const pred = (x) => A.mul(x).add(B)
 
 
@@ -32,8 +33,8 @@ for (var i = 0; i < 5000; i++){
     tf.tidy(train)
    
 }
-
-var s  = `A: ${A.dataSync()}, B: ${B.dataSync()}\n`;
+var s= `A Before Training : ${A_orignal}, B Before Training: ${B_orignal}\n`
+ s  += `A After Training: ${A.dataSync()}, B After Training: ${B.dataSync()}\n`;
 const preds = pred(X).dataSync();
 preds.forEach((pred, i) => {
   s += `X: ${i}, pred: ${pred}, true:${Y_True[i]}` + "\n";
